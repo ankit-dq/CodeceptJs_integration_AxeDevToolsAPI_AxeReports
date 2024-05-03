@@ -40,8 +40,8 @@ The test generates the json report and sends it to Axe Reports. In order to succ
 You can follow the steps outlined on [axe Reports API Creation steps](https://docs.deque.com/devtools-for-web/4/en/cli-api-key-reports).
 The newly created API key then needs to be updated in the **`steps_file.js`** on line number 50. Update the below line with the actual API key.
 
-```let api_test_key = "YOUR API KEY"
-
+```js
+let api_test_key = "YOUR API KEY";
 ```
 
 ## Run Tests
