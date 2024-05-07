@@ -54,7 +54,7 @@ module.exports = function() {
         }
         console.log(newUrl)
         // Axe Reports is limited to 40 characters long. The newUrl variable that is created above is a truncated version of the actual url (last 40 characters of the actual url) if the length is greater than 40 characters. The user can choose to change the logic to choose any other dimension name or to modify the url in any other way to fit the criteria of the 40 char long dimension. 
-        exec(`axe bulk-reports ${reportsDash_json_path} --axe-reports-api-key ${api_test_key} --send-axe-reports --axe-reports-dimensions="BenjaminMoore,URLS,${newUrl}"`,async function(err,stdout,stderr) {
+        exec(`axe bulk-reports ${reportsDash_json_path} --axe-reports-api-key ${api_test_key} --send-axe-reports --axe-reports-dimensions="OrgName,URLS,${newUrl}"`,async function(err,stdout,stderr) {
       if(err) {
       throw err;
       }
