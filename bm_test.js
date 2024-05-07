@@ -4,8 +4,8 @@ const AxeDevtoolsBuilder = require("@axe-devtools/playwright").default;
 const AxeDevtoolsReporter = require("@axe-devtools/reporter").default;
 Feature('Checking for a11y issues');
 let i=1
-const bm = "BenjaminMoore"
-const url= ["https://store.benjaminmoore.com/storefront/us/en/shop-by-product/interior-exterior-primers", "https://store.benjaminmoore.com/storefront/us/en/shop-by-product/interior-paint", "https://www.benjaminmoore.com/en-us/paint-colors"]
+const bm = "OrgName"
+const url= ["https://broken-workshop.dequelabs.com/", "https://dequeuniversity.com/demo/dream", "http://abcdcomputech.dequecloud.com/"]
 
 
 for (let i = 0; i < url.length; i++) {
